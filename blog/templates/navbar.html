@@ -1,5 +1,5 @@
 <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
     <a class="navbar-brand" href="#">Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
       aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,22 +30,52 @@
         </li> -->
       </ul>
       <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item">
-            <a class="nav-link" href="/login">Login</a>
+        {% if current_user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('new_post') }}">New Post</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register">Register</a>
+            <a class="nav-link" href="{{url_for('account') }}">Account</a>
           </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('logout') }}">Logout</a>
+            </li>
+        {% else %}
+           <li class="nav-item">
+              <a class="nav-link" href="{{url_for('login') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('register') }}">Register</a>
+            </li>
+          {% endif %}
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light">
-            <i class="fab fa-twitter"></i>
+          <a class="nav-link waves-effect waves-light" href="https://twitter.com/">
+            <i class="fab fa-twitter" ></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light">
-            <i class="fab fa-google-plus-g"></i>
+          <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="https://github.com/">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="https://www.linkedin.com/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item avatar">
+            <a class="nav-link p-0" href="#">
+              <img src="https://images.unsplash.com/photo-1579752220313-e8e7ba4e9370?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="rounded-circle z-depth-0" alt="" height="35">
+            </a>
+          </li>
+        </ul>
+     
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
