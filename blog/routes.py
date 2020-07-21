@@ -87,6 +87,7 @@ def account():
         form.username.data = current_user.username
         form.email.data = current_user.email
     image_file= url_for('static',filename='images/' + current_user.image_file)
+    print(image_file, 'ase')
     return render_template('account.html', title= 'Account', image_file= image_file, form=form)
 
 @app.route("/post/new", methods=['GET', 'POST'])
