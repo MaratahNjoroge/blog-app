@@ -36,8 +36,7 @@ This is a web application that allows various users to submit a short blog. User
 * $ python3.6 -m venv virtual (install virtual environment)
 * $ source virtual/bin/activate
 * $ python3.6 -m pip install -r requirements.txt (install all dependencies)
-* Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
-* $ ./start.sh
+* $ python3 run.py
 
 
 # How it works
@@ -66,4 +65,4 @@ User image avartar does not function properly.
 
 ### License
 
-**[MIT](./LICENSE)** (c) 2017 **[MaratahNjoroge](https://maratahnjoroge.github.io/Portfolio-LP/)**
+**[MIT](./LICENSE)** (c) 2020 **[MaratahNjoroge](https://maratahnjoroge.github.io/Portfolio-LP/)**
