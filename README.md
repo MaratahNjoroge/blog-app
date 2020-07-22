@@ -20,8 +20,8 @@ This is a web application that allows various users to submit a short blog. User
 | --------------- | :----------:| --------: |
 |Display Various Blogs  | N/A | Various blogs  |
 |Display Blogs | **Click** on a Category| A page with a list of blogs |
-|Add new blog | **Click** New pitch | User Should register/sign in to add new blog |
-|View Blogs | **Click** on a pitch | View a blog and comments |
+|Add new blog | **Click** Newpost | User Should register/sign in to add new blog |
+|View Blogs | **Click** on a blog | View a blog and comments |
 |Comment on a blog | **Click** Comment | Registered User displays a form where a user can comment on a certain blog |
 |Delete a blog | **Click** glyphicon delete| Delete a specific blog increases |
 |Close a blog | **Click** glyphicon close | Close a specific blog decreases |
@@ -37,7 +37,6 @@ This is a web application that allows various users to submit a short blog. User
 * $ source virtual/bin/activate
 * $ python3.6 -m pip install -r requirements.txt (install all dependencies)
 * $ python3 run.py
-
 
 # How it works
 
