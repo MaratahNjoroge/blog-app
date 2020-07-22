@@ -23,8 +23,8 @@ This is a web application that allows various users to submit a short blog. User
 |Add new blog | **Click** New pitch | User Should register/sign in to add new blog |
 |View Blogs | **Click** on a pitch | View a blog and comments |
 |Comment on a blog | **Click** Comment | Registered User displays a form where a user can comment on a certain blog |
-|Delete a blog | **Click** glyphicon delete| Vote for a specific blog increases |
-|Close a blog | **Click** glyphicon close | Vote for a specific blog decreases |
+|Delete a blog | **Click** glyphicon delete| Delete a specific blog increases |
+|Close a blog | **Click** glyphicon close | Close a specific blog decreases |
 
 ## Prerequisites
 * Python3.6
